@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>Julia - I'm User Interface Designer & Developer.</title>
+  <meta name="title" content="Julia - I'm User Interface Designer & Developer.">
+  <meta name="description" content="This is a personal portfolio html template made by codewithsadee">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+
+  <!--
+    fonts 
+  -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Katibeh&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Katibeh&family=Rakkas&display=swap" rel="stylesheet">
+  <!--  
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.jpg">
+  <link rel="preload" as="image" href="./assets/images/Blog.svg">
+
+</head>
+
+<body>
+
+
+  <!--
+    Scroll to top button 
+  -->
+  <div class="scroll-btn" id="scroll">
+    <a href="#"><img src="/assets/images/Scroll.svg" class="Scroll"></a>
+  </div>
+
+
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo" id="logo">
+        <h2>الش<span>بلي</span></h2>
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+
+          <a href="#" class="logo" id="logo">
+            <h2>الش<span>بلي</span></h2>
+          </a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#logo" class="navbar-link">الرئسية</a>
+          </li>
+
+          <li>
+            <a href="#about" class="navbar-link">معلومات</a>
+          </li>
+
+          <li>
+            <a href="#skills" class="navbar-link">المهارات</a>
+          </li>
+
+          <li>
+            <a href="#services" class="navbar-link">خدماتنا</a>
+          </li>
+
+          <li>
+            <a href="#contact" class="navbar-link">اتصل</a>
+          </li>
+
+        </ul>
+
+        <div class="wrapper">
+          <a href="mailto:info@email.com" class="contact-link">hassan23@email.com</a>
+        </div>
+
+        <ul class="social-list">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-dribbble"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero" aria-label="home">
+        <div class="container">
+
+          <figure class="hero-banner">
+            <img src="/assets/images/hero-banner.png" width="560" height="540" alt="Julia" class="w-100"
+              data-reveal="top">
+          </figure>
+
+          <div class="hero-content">
+
+            <h1 class="h1 hero-title" data-reveal="top" data-reveal-delay="0.5s">
+              أنا حسن عبدالرحمن👋
+            </h1>
+            <p class="section-text" data-reveal="top" data-reveal-delay="0.75s">
+              انا عاطفي جد
+              عن العمل الذي أقوم به احب التحديات ولامور المعقدة .
+            </p>
+
+            <div class="btn-wrapper" data-reveal="top" data-reveal-delay="1s">
+              <a href="#" class="btn btn-primary">اعمال</a>
+
+              <a href="#" class="btn btn-secondary">اتصل</a>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+      <!-- 
+      #ABUT ME
+    -->
+      <section class="about" id="about">
+        <div class="content">
+          <div class="title"><span>معلومات عنا</span></div>
+          <div class="about-details">
+            <div class="right">
+              <img src="/assets/images/Hero.png" alt="Hassan">
+            </div>
+            <div class="left">
+              <div class="topic">التصميم هو شغفي :</div>
+              <p class="p-topic">أنا مطور ويب متحمس وملتزم بتحقيق نتائج ممتازة.
+                أنا دائماً أسعى لتحسين مهاراتي ومواكبة أحدث التطورات في تطوير الويب.
+                أنا قادر على العمل تحت ضغط وفي فرق متعددة التخصصات
+                أتطلع إلى تحقيق تحديات جديدة والمساهمة في مشروعة!
+              </p>
+              <div>
+                <button class="btn btn-secondary">اعرف المزيد</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- 
+      #ME Skills
+    -->
+      <section class="skills" id="skills">
+        <div class="content">
+          <div class="title"><span>المهارات</span></div>
+          <div class="skills-details">
+
+            <div class="left">
+              <div class="topic">عملنا يعكس معرفتنا!</div>
+              <p>
+                قمت بتصميم وتطوير مواقع الويب باستخدام HTML وCSS وJavaScript
+                وأطر العمل مثل React وAngular.
+                تعاملت مع قواعد البيانات والتفاعل معها باستخدام SQL .
+                قمت بتحسين تجربة المستخدم وأداء المواقع عن طريق تطبيق مفاهيم تصميم التجربة وتحسين محركات البحث (SEO).
+              </p>
+              <div class="experience">
+                <div class="num">4</div>
+                <div class="exp">سنه <br>من الخبره </div>
+              </div>
+            </div>
+
+            <div class="boxes">
+              <div class="box">
+                <div class="topic">HTML</div>
+                <div class="num">95%</div>
+              </div>
+              <div class="box">
+                <div class="topic">#C</div>
+                <div class="num">75%</div>
+              </div>
+              <div class="box">
+                <div class="topic">UX/UI</div>
+                <div class="num">99%</div>
+              </div>
+              <div class="box">
+                <div class="topic">CSS</div>
+                <div class="num">85%</div>
+              </div>
+              <div class="box">
+                <div class="topic">JS</div>
+                <div class="num">90%</div>
+              </div>
+              <div class="box">
+                <div class="topic">PHP</div>
+                <div class="num">70%</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+
+      <!-- 
+      #my Services Section
+    -->
+      <section class="services" id="services">
+        <div class="container">
+          <div class="title"> <span> خدماتنا </span></div>
+          <div class="boxes">
+            <div class="box">
+              <div class="icon">
+                <i class="fas">
+                  <img src="/assets/images/user-interface - Copy.png" alt="Hassan">
+                </i>
+              </div>
+              <div class="topic">مونتاج</div>
+              <p>يعتبر المونتاج عملية إبداعية تسمح للمحررين بتحويل اللقطات الفردية إلى قصة متكاملة تثير المشاعر وتوصل
+                الرسالة المرجوة</p>
+            </div>
+
+            <div class="box">
+              <div class="icon">
+                <i class="fas">
+                  <img src="/assets/images/web-development.png" alt="Hassan">
+                </i>
+              </div>
+              <div class="topic">تطويرالويب </div>
+              <p>تطوير الويب العديد من الجوانب الفنية والوظيفية لجعل المواقع والتطبيقات قابلة للوصول وسهلة الاستخدام
+                وجذابة للمستخدمين</p>
+            </div>
+
+            <div class="box">
+              <div class="icon">
+                <i class="fas ">
+                  <img src="/assets/images/mobile-app - Copy.png" alt="Hassan">
+                </i>
+              </div>
+              <div class="topic">برمجة تطبيقات</div>
+              <p>يهدف تطوير التطبيقات المحمولة إلى تلبية احتياجات
+                المستخدمين وتوفير تجربة سلسة وممتعة عند استخدام الهواتف الذكية.
+              </p>
+
+            </div>
+
+            <div class="box">
+              <div class="icon">
+                <i class="fas ">
+                  <img src="/assets/images/search-engine-optimization - Copy.png" alt="Hassan">
+                </i>
+              </div>
+              <div class="topic">تحسين محركات الويب</div>
+              <p>تحسين محركات البحث يساعد على زيادة الرؤية والوصول للموقع وجذب المزيد من الزوار المستهدفين من خلال
+                نتائج
+                البحث العضوية</p>
+            </div>
+
+            <div class="box">
+              <div class="icon">
+                <i class="fas ">
+                  <img src="/assets/images/ui-design - Copy.png" alt="Hassan">
+                </i>
+              </div>
+              <div class="topic"> تجربة المستخدم</div>
+              <p>
+                تحقيق تجربة مستخدم ممتازة يساهم في زيادة رضاستخدام المستخدم، والولاء للعلامة التجارية، وتحقيق أهداف
+                الأعمال مثل زيادة المبيعات والتحويلات.
+
+
+              </p>
+            </div>
+
+            <div class="box">
+              <div class="icon">
+                <i class="fas ">
+                  <img src="/assets/images/responsive-design.png" alt="Hassan">
+                </i>
+              </div>
+              <div class="topic">التسويق الالكتروني</div>
+              <p>
+                يوفر التسويق الإلكتروني فرصًا واسعة للشركات للوصول إلى جمهور أكبر وتحقيق نتائج فعالة بتكلفة أقل مقارنة
+                بالوسائل التقليدية للتسويق.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- 
+        - #CONTACT
+      -->
+
+      <section class="section contact" id="contact" aria-label="contact">
+        <div class="container">
+          <div class="title"> <span>اتصل بنا</span></div>
+
+          <div class="contact-card">
+
+            <div class="contact-content" data-reveal="left">
+
+              <div class="card-icon">
+                <img src="./assets/images/icon-5.svg" width="44" height="44" loading="lazy" alt="envelop icon">
+              </div>
+
+              <h2 class="h2 section-title">اذا لديك الرغبه في العمل معنا ف مرحبا بك في واحتك. </h2>
+
+              <p class="section-text-p">
+                اقدم حلول سهلة وبسيطه لجعل حياة العميل اكثر راحه .أن كان لديك اي مشكله تريد حلها اتواصل معي .
+              </p>
+
+            </div>
+
+            <form action="" class="contact-form" data-reveal="right">
+
+              <div class="input-wrapper">
+                <input type="text" name="name" placeholder="الاسم *" required class="input-field">
+
+                <input type="email" name="email_address" placeholder="الايميل*" required class="input-field">
+              </div>
+
+              <textarea name="message" placeholder="رسالة *" required class="input-field"></textarea>
+
+              <button type="submit" class="btn btn-secondary">ارسال</button>
+
+            </form>
+
+          </div>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="content-links">
+
+      <ul class="navbar-list">
+
+        <li>
+          <a href="#logo" class="navbar-link">الرئسية</a>
+        </li>
+
+        <li>
+          <a href="#about" class="navbar-link">معلومات</a>
+        </li>
+
+        <li>
+          <a href="#skills" class="navbar-link">المهارات</a>
+        </li>
+
+        <li>
+          <a href="#services" class="navbar-link">خدماتنا</a>
+        </li>
+
+        <li>
+          <a href="#contact" class="navbar-link">اتصل</a>
+        </li>
+
+      </ul>
+
+      <ul class="social-list">
+
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-dribbble"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-youtube"></ion-icon>
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+
+    <p class="copyright">
+      جميع الحقوق محفوظة موقع الشيبلي نت 2024 .
+    </p>
+
+  </footer>
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
