@@ -438,11 +438,12 @@ span {
 \*-----------------------------------*/
 
 .hero {
-  padding-block-start: calc(var(--section-padding) + 50px);
+  margin-block-start: 60px;
 }
 
 .hero .container {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: 50px;
 }
 
@@ -470,12 +471,17 @@ span {
   filter: drop-shadow(var(--shadow-2));
 }
 
-.hero-content {
+
+.hero .hero-content h1 {
   text-align: center;
+  font-size: var(--fs-2);
+  margin-bottom: 20px;
 }
 
-.hero .section-text {
-  margin-block: 24px 36px;
+.hero .hero-content .section-text {
+  text-align: center;
+  font-size: var(--fs-5);
+  margin-bottom: 60px;
 }
 
 .btn-wrapper {
@@ -844,6 +850,13 @@ textarea.input-field {
 
 @media (max-width: 575px) {
 
+  :root {
+    container: 570px;
+  }
+
+
+
+
 
   /**
    *About
@@ -858,6 +871,7 @@ textarea.input-field {
   section .about-details {
     display: flex;
     flex-direction: column;
+
   }
 
   section .about-details .right {
@@ -889,31 +903,29 @@ textarea.input-field {
     margin-top: 50px;
   }
 
-  .skills .content {
-    max-width: 570px;
-  }
 
   .skills .content .skills-details {
     display: flex;
     flex-direction: column;
-
   }
 
-  .skills .skills-details .left {
+  .skills .content .skills-details .left {
     width: 100%;
+    padding: 0;
+    margin: 0;
   }
 
-  .skills-details.left p {
+  .skills .content .skills-details .left .topic {
     font-size: var(--fs-3);
-  }
-
-  .skills .skills-details .left .topic {
-    font-size: var(--fs-2);
-    font-weight: 500;
     color: var(--max-purple);
   }
 
-  .skills-details .left .experience {
+  .skills .content .skills-details .left p {
+    font-size: var(--fs-5);
+
+  }
+
+  .skills .content .skills-details .left .experience {
     display: flex;
     gap: 40px;
     align-items: center;
@@ -921,32 +933,44 @@ textarea.input-field {
 
   }
 
-  .skills-details .experience .num {
+  .skills .content .skills-details .experience .num {
     font-weight: 700;
   }
 
-  .skills-details .experience .exp {
+  .skills .content .skills-details .experience .exp {
     font-size: var(--fs-2s);
     font-weight: 500;
   }
 
-  .skills .skills-details .boxes {
+  .skills .content .skills-details .boxes {
     width: 100%;
-    grid-template-rows: 1fr 1fr;
-    gap: 20px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
   }
 
-  .skills .skills-details .boxes .box {
-    width: 100%;
+  .skills .content .skills-details .boxes .box {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: solid 1px var(--btn-color);
+    border-radius: 16px;
+    padding: 20px;
   }
 
-  .skills-details .boxes .box .topic {
+  .skills .content .skills-details .boxes .box:hover {
+    transform: translateY(10px);
+  }
+
+  .skills .content .skills-details .boxes .box .topic {
     font-size: var(--fs-3);
     font-weight: 400;
 
   }
 
-  .skills-details .boxes .box .num {
+  .skills .content .skills-details .boxes .box .num {
     font-size: 50px;
     font-weight: 500;
 
@@ -964,8 +988,8 @@ textarea.input-field {
   }
 
   .services .boxes {
-    max-width: 570px;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
   }
 
   .services .boxes .box {
