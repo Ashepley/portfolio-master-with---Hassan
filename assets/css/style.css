@@ -182,7 +182,7 @@ body.nav-active {
 \*-----------------------------------*/
 
 .container {
-  padding-inline: 16px;
+  padding-inline: 10px;
 }
 
 .social-list {
@@ -243,6 +243,7 @@ body.nav-active {
   border-radius: var(--radius-pill);
   transition: var(--transition-1);
   will-change: transform;
+  text-align: center;
 }
 
 
@@ -251,6 +252,7 @@ body.nav-active {
   background-color: var(--btn-color);
   border-color: var(--max-oring);
   transition: var(--transition-2);
+  text-align: center;
 }
 
 
@@ -273,10 +275,10 @@ body.nav-active {
   margin-block-end: 16px;
 }
 
-.grid-list {
+/* .grid-list {
   display: grid;
   gap: 30px;
-}
+} */
 
 [data-reveal] {
   opacity: 0;
@@ -358,6 +360,7 @@ span {
 }
 
 .logo h2 {
+  margin-right: 30px;
   color: var(--max-oring);
   font-size: var(--fs-3);
 }
@@ -993,7 +996,7 @@ textarea.input-field {
   }
 
   .services .boxes .box {
-    padding: 20px 20px;
+    padding: 20px 10px;
     margin: auto;
     border: solid 0.5px var(--btn-color);
   }
@@ -1379,17 +1382,6 @@ textarea.input-field {
    * CUSTOM PROPERTY
    */
 
-  :root {
-
-    /**
-     * spacing
-     */
-
-    --section-padding: 120px;
-
-  }
-
-
 
   /**
    * REUSED STYLE
@@ -1463,14 +1455,20 @@ textarea.input-field {
    */
 
   .hero {
-    padding-block-start: calc(var(--section-padding) + 80px);
+    margin-block-start: 80px;
   }
 
   .hero .container {
-    grid-template-columns: 0.8fr 1fr;
+    display: flex;
     align-items: center;
-    gap: 100px;
+    flex-direction: row;
+
   }
+
+  .hero .container .hero-banner {
+    width: 450px;
+  }
+
 
   .hero-content {
     text-align: left;
@@ -1511,13 +1509,40 @@ textarea.input-field {
 
 
   /**
+   *Services .container
+  */
+
+  .services .title span {
+    margin-right: 200px;
+  }
+
+  .services .boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: 100px;
+
+  }
+
+
+
+
+  /**
    * CONTACT
    */
 
+
+  .contact .title span {
+    margin-right: 200px;
+  }
+
   .contact-card {
-    grid-template-columns: 0.8fr 1fr;
+    width: 100%;
+    grid-template-columns: 1.5fr 3fr;
     align-items: center;
-    gap: 90px;
+    gap: 20px;
+    margin-right: 100px;
+    padding: 60px;
   }
 
 
@@ -1528,6 +1553,22 @@ textarea.input-field {
    *footer
   */
 
+  .footer {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+
+
+
+  .footer .content-links {
+    margin-right: 120px;
+  }
+
+
+  .footer .copyright {
+    margin-right: 200px;
+  }
 
 
   .content-links .navbar-list {
