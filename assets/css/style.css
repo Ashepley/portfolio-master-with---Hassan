@@ -868,7 +868,7 @@ textarea.input-field {
 
 
   .about .content {
-    max-width: 570px;
+    max-width: 575px;
   }
 
 
@@ -998,8 +998,8 @@ textarea.input-field {
 
 
   .services .boxes .box {
-    width: 300px;
-    padding: 20px 10px;
+    width: 320px;
+    padding: 15px 10px;
     margin: auto;
     border: solid 0.5px var(--btn-color);
   }
